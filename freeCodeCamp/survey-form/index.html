@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><i>Thank you for taking your time to help us improve our platform.</i></p>
+    <main class="container">
+    <div>
+    <form id="survey-form">
+        <fieldset>
+        <legend>Details</legend>
+        <div class="details">
+            <div class="space">
+        <label id="name-label">Name </label>
+        <input type="text" id="name" required placeholder="Name"></div>
+        <div class="space">
+        <label id="email-label">Email </label>
+        <input type="email" id="email" required placeholder="Email"></div>
+        <div class="space">
+        <label id="number-label">Age <i>(optional)</i></label>
+        <input type="number" id="number" min="10"
+        max="99" required placeholder="Number"></div>
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <div class="role">
+        <label>What describes your current role?</label>
+        <select id="dropdown">
+            <option>(Choose one)</option>
+            <option>Student</option>
+            <option>Programmer</option>
+            <option>Web developer</option>
+            <option>Unemployed</option>
+        </select>
+        </div>
+        <label>Would you recommend to your friend?  </label>
+        <div class="yes">
+        <input type="radio" name="recommend" value="yes" checked>Yes
+        </div>
+        <div class="no">
+        <input type="radio" name="recommend" value="no">No
+        </div>
+        <div class="maybe">
+        <input type="radio" name="recommend" value="maybe">Maybe
+        </div>
+        <label>Which languages do you like?<i>(Check ones you like)</i></label>
+        <div class="input">
+        <input type="checkbox" value="favorite" checked>Html
+        </div>
+        <div class="input">
+        <input type="checkbox" value="favorite">JavaScript
+        </div>
+        <div class="input">
+        <input type="checkbox" value="favorite">Python
+        </div>
+        <div class="input">
+        <input type="checkbox" value="favorite">Java
+        </div>
+        </fieldset>
+        <fieldset>
+        <div class="suggest">
+        <label>Any comments or suggestions?</label>
+        <textarea placeholder="Enter your comment here..."></textarea>
+        </div>
+        <button id="submit">Submit</button>
+        </fieldset>
+    </form>
+    </div>
+    </main>
+</body>
+</html>
